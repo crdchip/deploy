@@ -1,0 +1,87 @@
+:root{
+    --bg1: #9b59b6;
+    --bg2: #3498db;
+    --bg3: #26ade4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* ------------------Login----------------- */
+.a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 110vh;
+    background: linear-gradient(to bottom right, var(--bg1), var(--bg2)); 
+}
+.form-login{
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.form-login h1{
+    padding-bottom: 30px;
+    color: var(--bg2);
+}
+.form-group{
+    margin-bottom: 25px;
+    position: relative;
+}
+.form-group  input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+    padding-left: 12px;
+}
+.form-group label{
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    transition: 0.5s;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 200;
+}
+.form-group label.focus{
+    transform: translateY(-20px);
+}
+.form-group button {
+    height: 35px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: linear-gradient(120deg, var(--bg1), var(--bg3));
+    transition: 0.5s;
+    background-size: 200%;
+    border-radius: 5px;
+    color: #fff;
+}
+.form-group button:hover{
+    background-position: right;
+}
+
+/* ------------------Register----------------- */
+.form-register h2{
+    padding-bottom: 20px;
+    color: var(--bg2);
+}
+.form-register{
+    width: 300px;
+    height: 750px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
